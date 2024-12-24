@@ -1,0 +1,190 @@
+/* creating a root variable lets us reference it by any selector once created here */
+:root {
+    --happy-salmon: #f5624d;
+    --christmas-red: #cc231e;
+    --elf-green: #34a65f;
+    --tree-green: #0F8A5F;
+    --merry-blue: #235E6F;
+    --snow-white: #fff;
+}
+
+/* creating universal attributes shares them across all selectors */
+* {
+
+}
+
+/* good to create space and edging with padding and margin */
+body {
+    padding: 0%;
+    margin: 0%;
+}
+
+/* the container for the top of the webpage */
+header {
+    padding: 1%;
+    margin: -1%;
+    /* position: fixed; */
+    line-height: 70px;
+
+    background-image: url(./images/blurry-christmas-lights.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    width: 100%;
+    color: #fff;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/* creates common formatting across all header types */
+h1,
+h2,
+h3,
+h4 {
+
+}
+
+/* the title of the webpage */
+h1 {
+    display: inline-block;
+    /* flex-direction: column; */
+    text-align: left;
+    padding: 1%;
+    margin: 1%;
+    width: 100%;
+    font-size: 225%;
+
+}
+
+h2 {
+    display: block;
+    text-align: center;
+    padding: 1%;
+    margin: 0%; 
+    font-size: 200%;
+}
+
+/* the nav bar displaying the links to other pages */
+.pagesNav {
+    padding: 0%;
+    margin: 0%;
+}
+
+nav {
+
+}
+
+/* the container for the page links list */
+.pagesNav ul {
+    display: flex;
+    padding: 0px 10px;
+    margin: 1%;
+}
+
+/* each page link */
+.pagesNav li {
+    display: inline;
+    padding: 0px 20px;
+
+}
+
+.mainBoxes {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.treeBorder {
+    padding: 14%;
+    margin: 1%;
+    height: 1200px;
+    width: 100%;
+
+
+    background-image: url(./images/christmas-trees-pattern.jpg);
+    background-size: contain;
+    background-repeat: repeat;
+    background-position: center;
+
+}
+
+main {
+    padding: 5px;
+    margin: 5px;
+}
+
+.mainContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0%;
+    margin: 0%;
+    height: 500px;
+    width: 100%;
+}
+
+.corkDeer {
+    /* padding: 0%;
+    margin: 0%;
+    height: 500px;
+    width: 500px; */
+    /* border: 5px solid var(--merry-blue);
+    display: flex;
+    flex-wrap: wrap; */
+    
+}
+
+
+    .cd-headshot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cd-headshot  img {
+    height: 250px;
+    width: 250px;
+    padding: 0%;
+    border: 5px solid var(--merry-blue)
+}
+
+.cd-headshot figcaption {
+    padding: 1%;
+}
+
+.orderNow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.orderNow button {
+    background-color: var(--christmas-red);
+    color: var(--snow-white);
+    border-radius: 8px;
+    padding: 14px 40px;
+    /* box-shadow: 0 5px #999; */
+}
+
+.orderNow button:hover {background-color: var(--happy-salmon)}
+
+.orderNow button:active {
+    background-color: var(--happy-salmon);
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+@media screen and (max-width: 1700px) {
+    
+    .pagesNav,
+    ul {
+
+    }
+
+    .pagesNav,
+    li {
+
+    }
+}
